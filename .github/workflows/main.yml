@@ -1,14 +1,14 @@
-name: GitHub_Actions
+name: GitHub Actions
 
 on: 
- push:
-  branches: 
-    - main
+  push:
+    branches:
+      - main
 
-    jobs:
-    mybuild
-    runs-on: ubuntu latest
+jobs:
+  mybuild:
+    runs-on: ubuntu-latest
 
     steps:
-    - name: Print Hello message
-    run : echo "Hello Word"
+      - name: Print Hello message
+        run: echo "Hello World"
