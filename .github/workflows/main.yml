@@ -1,0 +1,14 @@
+name: GitHub_Actions
+
+on: 
+ push:
+  branches: 
+    - master
+
+    jobs:
+    mybuild
+    runs-on: ubuntu latest
+
+    steps:
+    - name: Print Hello message
+    run : echo "Hello Word"
